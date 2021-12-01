@@ -7,10 +7,14 @@
         var searchinp = document.getElementById("searchinput").value;
         if (searchinp != "") {
           var MainFrame = document.getElementById("mainframe");
-          if (searchinp == "https://www." || searchinp == "http://www.") {
+          if (searchinp == "https://www.") {
             MainFrame.src = searchinp;
           } else {
-            MainFrame.src = "https://www.bing.com/search?q="+searchinp+"&FORM=AWRE&safesearch=strict&adlt=strict";
+            if (searchinp == "http://www.") {
+              MainFrame.src = searchinp;
+            } else {
+              MainFrame.src = "https://www.bing.com/search?q="+searchinp+"&FORM=AWRE&safesearch=strict&adlt=strict";
+            }
           }
         }
       }
