@@ -8,9 +8,10 @@
         if (searchinp != "") {
           var MainFrame = document.getElementById("mainframe");
           if (searchinp == "https://www." || searchinp == "http://www.") {
-            MainFrame.src = searchinp
+            MainFrame.src = searchinp;
+          } else {
+            MainFrame.src = "https://www.bing.com/search?q="+searchinp+"&FORM=AWRE&safesearch=strict&adlt=strict";
           }
-          MainFrame.src = "https://www.bing.com/search?q="+searchinp+"&FORM=AWRE&safesearch=strict&adlt=strict";
         }
       }
     </script>
