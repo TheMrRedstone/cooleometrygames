@@ -4,8 +4,10 @@
     <title>Search Engine</title>
     <script>
       var searchinput = document.getElementById("searchinput")
-      if (!searchinput == "") {
-        console.log("Test")
+      if (searchinput.innerText == "") {
+        console.log("Nothing")
+      } else {
+        condole.log(searchinput.innerText)
       }
     </script>
   </head>
