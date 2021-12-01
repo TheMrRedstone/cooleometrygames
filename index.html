@@ -3,11 +3,11 @@
   <head>
     <title>Search Engine</title>
     <script>
-      var searchinput = document.getElementById("searchinput");
-      if (searchinput.value == "") {
+      var searchinput = document.getElementById("searchinput").value;
+      if (searchinput == "") {
         console.log("Nothing");
       } else {
-        console.log(searchinput.value);
+        console.log(searchinput);
       }
     </script>
   </head>
