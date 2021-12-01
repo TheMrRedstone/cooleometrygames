@@ -4,10 +4,10 @@
     <title>Search Engine</title>
     <script>
       var searchinp = document.getElementById("searchinput").value;
-      if (searchinp == "") {
-        console.log("Nothing");
-      } else {
+      if (searchinp != null) {
         console.log(searchinp);
+      } else {
+        console.log("Nothing");
       }
     </script>
   </head>
