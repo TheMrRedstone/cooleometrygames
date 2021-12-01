@@ -3,15 +3,17 @@
   <head>
     <title>Search Engine</title>
     <script>
-      var searchinp = document.getElementById("searchinput").value;
-      if (searchinp != null) {
-        console.log(searchinp);
-      } else {
-        console.log("Nothing");
+      function search() {
+        var searchinp = document.getElementById("searchinput").value;
+        if (searchinp != null) {
+          console.log(searchinp);
+        } else {
+          console.log("Nothing");
+        }
       }
     </script>
   </head>
   <body>
-    <input placeholder="Type Here To Search" id="searchinput"></input><button>Search</button>
+    <input placeholder="Type Here To Search" id="searchinput"></input><button onclick="search()">Search</button>
   </body>
 </html>
